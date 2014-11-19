@@ -47,6 +47,7 @@ Make sure the tests pass:
 Make sure Redis is running
 
 Settings.yml was discontinued.  You'll need to load the settings in it into your db.  open up consule then run the following.
+
     $ rails console
     > yml = YAML.load(IO.read('config/settings.yml'))
     > data_dotted_keys = Hash[  yml.map{|parent,hash| hash.map{|k,v| [[parent, k].join('.'), v] } }.flatten(1) ]
