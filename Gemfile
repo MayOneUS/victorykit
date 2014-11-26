@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 gem 'rack-cache'
-gem 'rails', '3.2.12'
+gem 'rails', '3.2.21'
 gem 'pg'
 gem 'foreigner'
 gem 'memcachier'
@@ -10,7 +10,7 @@ gem 'dalli'
 gem 'kgio'
 
 # just used for unsubscribes import
-gem 'mysql2'
+#gem 'mysql2'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -35,7 +35,7 @@ group :test, :development do
   gem 'capybara', '>= 2.0.2'
   gem 'capybara-webkit'
   gem 'pry'
-  gem 'pry-debugger'
+  #gem 'pry-debugger'
   gem 'shoulda-matchers'
   gem 'nokogiri'
 end
@@ -67,10 +67,10 @@ gem 'devise'
 gem 'redis'
 gem 'simple-random'
 
-gem 'newrelic_rpm'
-gem 'newrelic-redis'
+#gem 'newrelic_rpm'
+#gem 'newrelic-redis'
 gem 'airbrake'
-gem 'unicorn'
+#gem 'unicorn'
 
 gem 'redis-store'
 gem 'redis-rails'
