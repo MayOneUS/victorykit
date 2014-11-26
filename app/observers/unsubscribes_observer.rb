@@ -1,8 +1,8 @@
-class UnsubscribeObserver < ActiveRecord::Observer
-observe Unsubscribe
-require 'NationBuilder'
+class UnsubscribesObserver < ActiveRecord::Observer
+  observe Unsubscribe
+  require 'nationbuilder'
+
   def after_create(record)
-    puts "JESUS PLEASE WORK"
     client = NationBuilder::Client.new('mayday', 'nationbuilderprivatekey')
     puts "in nation builder unsubscribe!"
     params = {
