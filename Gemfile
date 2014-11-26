@@ -91,6 +91,9 @@ gem 'will_paginate'
 gem 'active_attr'
 gem 'font-awesome-rails'
 
+# nationbuilder
+gem 'nationbuilder-rb'
+
 # Background workers
 gem 'slim', '>= 1.1.0'
 gem 'sinatra', '>= 1.3.0', :require => nil
