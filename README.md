@@ -27,6 +27,8 @@ You may need to ensure you have qt libraries installed for webkit.  On ubuntu, y
 
     sudo apt-get install qt5-default libqt5webkit5-dev qtdeclarative5-dev build-essential
 
+On Mac, install Qt with `brew install qt`.
+
 ## Setting up & starting server
 
 Install the required version of ruby specified in `Gemfile` (2.0.0 as of this writing)
@@ -40,18 +42,18 @@ Make sure gems are up to date:
 
     $ bundle
 
-Make sure Postgres is running
+Make sure Postgres and Redis are running. If you installed them with Homebrew,
+`brew info [postgres|redis]` will tell you how to run them.
 
 Make sure the database exists and is migrated. Note: db:seeds is out of date.
 
+    $ cp config/database.yml.example config/database.yml
     $ rake db:create
     $ rake db:migrate
 
 Make sure the tests pass:
 
     $ rake
-
-Make sure Redis is running
 
 Settings.yml was discontinued.  You'll need to load the settings in it into your db.  open up consule then run the following.
 
