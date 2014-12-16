@@ -29,6 +29,13 @@ You may need to ensure you have qt libraries installed for webkit.  On ubuntu, y
 
 ## Setting up & starting server
 
+Install the required version of ruby specified in `Gemfile` (2.0.0 as of this writing)
+by using [RVM](https://rvm.io/rvm/install) or [rbenv](https://github.com/sstephenson/rbenv).
+
+Install bundler:
+
+    $ gem install bundler
+
 Make sure gems are up to date:
 
     $ bundle
